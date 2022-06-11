@@ -1,0 +1,32 @@
+﻿@model List<QureryModeAmanat>
+
+<a class="btn btn-dark"asp-area=""asp-controller="Libarary"asp-action="Addamanat">ایجاد امانت</a>
+
+<table class="table table-hover bg-danger">
+     <tr>
+        
+        <th>نام عضو</th>
+         <th>کد ملی عضو</th>
+        <th>شماره تلفن عضو</th>
+        <th>شناسه کتاب</th>
+        <th>نام کتاب</th>
+        <th>نویسنده کتاب</th>
+        <th>عملیات</th>
+    </tr>
+ 
+    @foreach(var item in Model)
+ {     
+    <tr>
+        <th>@item.MemberName</th>
+        <th>@item.MemberCodemeli</th>
+        <th>@item.MemberTel</th>
+        
+        <th>@item.BookId</th>
+        <th>@item.BookName</th>
+        <th>@item.Writer</th>
+       
+     
+    </tr>
+}
+</table>
+

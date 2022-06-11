@@ -1,0 +1,26 @@
+﻿
+@model WebApp_HW_13.Models.Entity.Amanat
+<h1 class="mb-5">صفحه اضافه کردن امانت  </h1>
+
+<form class="">
+  
+    <div>
+     <label asp-for="MemberID" class="col-sm-2 col-form-label"></label>  
+     <input type="text" class="form-control"  asp-for="MemberID">
+    </div>
+    <div>
+      <label asp-for="BookID" class="col-sm-2 col-form-label"></label>  
+      <input type="text" class="form-control" asp-for="BookID">
+    </div>
+       <div>
+      <label asp-for="LibraryID" class="col-sm-2 col-form-label"></label>  
+      <input type="text" class="form-control" asp-for="LibraryID">
+    </div>
+    
+    <div>
+        <input type="submit" class="btn btn-success" asp-controller="Libarary" asp-action="Addamanat" formmethod="post" value="ثبت"/>
+    
+        <a class="btn btn-primary" asp-area="" asp-controller="Libarary"asp-action="amanat">بازگشت به لیست</a>
+    </div>
+    
+</form>

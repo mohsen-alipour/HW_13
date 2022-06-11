@@ -1,0 +1,31 @@
+﻿
+@model WebApp_HW_13.Models.Entity.Book
+
+
+<div class="card">
+  <h5 class="card-header">جزئیات کتاب @Model</h5>
+  <div class="card-body">
+   
+    <div>
+        <label for="ID" class="col-sm-2 col-form-label">شناسه کتاب</label>   
+        <input type="text" class="form-control"  asp-for="ID" readonly="readonly">
+    </div>
+    <div>
+ 
+        <label asp-for="BookName" class="col-sm-2 col-form-label"></label>  
+        <input type="text" class="form-control" asp-for="BookName" readonly="readonly">
+    </div>
+    <div>
+         <label asp-for="Writer" class="col-sm-2 col-form-label"></label>  
+         <input type="text" class="form-control" asp-for="Writer" readonly="readonly">
+    </div>
+    <div>
+         <label asp-for="CountPage" class="col-sm-2 col-form-label"></label>
+         <input type="text" class="form-control"  asp-for="CountPage" readonly="readonly">
+    </div>
+    <div>  
+         <a class="btn btn-primary" asp-area="" asp-controller="Libarary"asp-action="index">بازگشت به لیست</a>
+    </div>
+  </div>
+</div>
+
